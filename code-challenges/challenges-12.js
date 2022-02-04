@@ -14,18 +14,15 @@
 // 
 // ------------------------
 
-
-
-
 const oddFiltration = (arr) => {
-
-
-let theOdNumber=arr.filter(num=>num%2==1);
-return theOdNumber;
-
-
-
+    // let newArray=[];
+    // for(i=0;i<arr.length;i++){
+    //     if(arr[i])
+    // }
     // write your code here
+
+    let newNumber= arr.filter(number => number % 2==1);
+     return newNumber;
 }
 
 // 2) ---------------------
@@ -75,22 +72,19 @@ return theOdNumber;
 //  2- If one of the names is null dont add it to the full name
 // ------------------------
 
-let theOdNumber=arr.filter(num=>num%2==1);
-return theOdNumber;
-
 const cvsFiltration = (arr) => {
-
-    let students=arr.filter(studen=>{
-        studen.yearsOfExperience>4&& tech=="js";
-        
-    });
-return students;
     // write your code here
+    let cvs=arr.filter(cv=>{
+        cv.yearsOfExperience>4&&cv.tech=="JS"});
+
+
+
+
 }
 
 // 3) ---------------------
 //
-// Given an array of words filter the names that contains one of the vowels (a, e, i, o, u)
+// Given an array of words filter out the words that contains one of the vowels (a, e, i, o, u)
 
 // EX:
 // ['car', 'boy', 'spy', 'building', 'why', 'dry' ] ==> ['spy', 'why', 'dry']
@@ -117,6 +111,12 @@ const vowelsFiltration = (arr) => {
 
 const skillComparison = (arr1, arr2) => {
     // write your code here
+    // let newArray = givenArray.concat([6, 7, 8, 9, 10]);
+    let allSkills = arr1.concat(arr2);
+    let final= allSkills.filter(theskill => ! arr1.includes(theskill) + ! arr2.includes(theskill));
+    return final;
+
+
 }
 
 
