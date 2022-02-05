@@ -117,6 +117,8 @@ const skillComparison = (arr1, arr2) => {
     return final;
 
 
+    
+
 }
 
 
