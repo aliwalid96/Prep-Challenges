@@ -17,8 +17,10 @@ const reverseString = (string) => {
     let siplitted=string.split("");
     let theReserved="";
     
-    for(let i=siplitted.length;i>=0;i--){
+    for(let i=siplitted.length-1;i>=0;i--){
         theReserved=theReserved.concat(siplitted[i]);
+
+        
     }
     return theReserved;
 
