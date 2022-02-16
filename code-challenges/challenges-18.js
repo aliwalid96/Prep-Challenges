@@ -15,11 +15,12 @@
 //
 
 const wordLength = (str) => {
-    let sippletedWords=str.split("");
-    let theMiddle=sippletedWords.length/2;
-    return theMiddle.length;
 
-    // write your code here
+    let sippletedWords = str.split(" ") 
+  let theMiddle= sippletedWords[Math.floor( sippletedWords.length/2)]
+  return theMiddle.length;
+    
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -44,19 +45,16 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
-    // write your code here
-    const arr1 = str1.split("");
-    const arr2 = str2.split("");
   
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] != arr2[i]){
-        return false;
-      } 
-      else{
-        return true;
+  if (str1.length != str2.length) return false;
+  const arr1 = str1.split("").sort();
+  const arr2 = str2.split("").sort();
 
-    }
-    }
+  for (let i = 0; i < str1.length; i++) {
+    if (arr1[i] != arr2[i]) return false;
+  }
+  return true;
+
 }
 // -------------------------------------------------------------------------------------------------------
 
