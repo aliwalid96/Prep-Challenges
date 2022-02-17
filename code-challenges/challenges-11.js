@@ -59,15 +59,9 @@ return theNewArr;
 //
 
 function fullName(arr) {
-    let arrOfStudent=[];
-   arr.map(name=>{
-    
-    let fullName=name.firstName+""+name.lastName;
-    arrOfStudent.push(fullName);
-   })
-// console.log(arrOfStudent)  ; 
-    return arrOfStudent;
-    // write your code here
+    let theFullName= arr.map(element => `${element.firstName} ${element.lastName}`);
+
+   return theFullName;
 }
 
 // 3) ---------------------

@@ -25,6 +25,9 @@
             "language": "javascript",
             "source": [
                 "let counter = 0;\nconst final = [];\nfor (let i = 0; i < arr.length - 1; i++) {\n  for (let j = 0; j < arr.length; j++) {\n    if (arr[i] !== arr[j]) counter++;\n  }\n  final.push(counter);\n  counter = 0;\n}\nreturn Math.min(...final);\n// Write your code here\n"
+
+                ""
+
             ],
             "outputs": []
         },
